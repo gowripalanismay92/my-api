@@ -16,7 +16,7 @@ ISSUER = f"https://login.microsoftonline.com/{TENANT_ID}/v2.0"
 jwk_client = PyJWKClient(JWKS_URL)
 security = HTTPBearer()
 
-app = FastAPI(title="My Protected API (my-api)")
+app = FastAPI(title="Home Page")
 
 # Allow requests from the separate SPA app at http://localhost:3000
 app.add_middleware(
